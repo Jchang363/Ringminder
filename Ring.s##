@@ -2722,6 +2722,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="PAD3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
 <part name="PAD4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
+<part name="PAD5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
+<part name="PAD6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -2761,9 +2763,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="35.56" y="120.65" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="81.28" y="111.76" smashed="yes">
-<attribute name="NAME" x="82.804" y="112.141" size="1.778" layer="95"/>
-<attribute name="VALUE" x="82.804" y="107.061" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="81.28" y="114.3" smashed="yes">
+<attribute name="NAME" x="82.804" y="114.681" size="1.778" layer="95"/>
+<attribute name="VALUE" x="82.804" y="109.601" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="86.36" y="88.9" smashed="yes">
 <attribute name="NAME" x="87.884" y="89.281" size="1.778" layer="95"/>
@@ -2836,6 +2838,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="103.4542" y="166.243" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="98.298" y="166.243" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="PAD5" gate="P" x="68.58" y="132.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.4342" y="133.223" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="65.278" y="133.223" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="PAD6" gate="P" x="76.2" y="132.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="78.0542" y="133.223" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="72.898" y="133.223" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2887,7 +2897,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="93.98" y="83.82"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="106.68" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="109.22" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
 <junction x="93.98" y="101.6"/>
 <pinref part="U1" gate="G$1" pin="PGND"/>
@@ -3042,7 +3052,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="30.48" y1="116.84" x2="30.48" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="121.92" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="121.92" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="116.84" x2="7.62" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="116.84" x2="7.62" y2="99.06" width="0.1524" layer="91"/>
@@ -3164,6 +3174,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="81.28" y1="203.2" x2="86.36" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PMID"/>
+<pinref part="PAD5" gate="P" pin="P"/>
+<wire x1="66.04" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="116.84" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="!PG"/>
+<pinref part="PAD6" gate="P" pin="P"/>
+<wire x1="66.04" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="111.76" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -3172,7 +3198,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="202,1,25.4,218.44,U3,XC1,,,,"/>
 <approved hash="204,1,81.28,213.36,U3,DCC,,,,"/>
 <approved hash="202,1,25.4,213.36,U3,SWDCLK,,,,"/>
-<approved hash="204,1,101.6,170.18,BAT1,+,,,,"/>
 <approved hash="202,1,30.48,93.98,U1,!MR,,,,"/>
 </errors>
 </schematic>
