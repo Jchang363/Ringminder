@@ -734,13 +734,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$15">
 <contactref element="U3" pad="E1"/>
-<contactref element="PAD2" pad="1"/>
-<contactref element="U3" pad="A5"/>
 <wire x1="24.9936" y1="31.5468" x2="24.9936" y2="36.7284" width="0.1524" layer="1"/>
 <wire x1="19.05" y1="25.6032" x2="22.5552" y2="29.1084" width="0.1524" layer="1"/>
 <wire x1="22.5552" y1="29.1084" x2="24.9936" y2="31.5468" width="0.1524" layer="1"/>
-<wire x1="19.05" y1="22.86" x2="19.05" y2="25.6032" width="0.1524" layer="1"/>
-<wire x1="24.9936" y1="36.7284" x2="25" y2="36.7" width="0.1524" layer="1"/>
 <wire x1="30.6324" y1="38.2524" x2="26.67" y2="38.2524" width="0.1524" layer="1"/>
 <wire x1="36.7284" y1="32.1564" x2="30.6324" y2="38.2524" width="0.1524" layer="1"/>
 <wire x1="36.7284" y1="31.3944" x2="36.7284" y2="32.1564" width="0.1524" layer="1"/>
@@ -748,6 +744,8 @@ design rules under a new name.</description>
 <wire x1="23.622" y1="28.0416" x2="33.3756" y2="28.0416" width="0.1524" layer="1"/>
 <wire x1="22.5552" y1="29.1084" x2="23.622" y2="28.0416" width="0.1524" layer="1"/>
 <wire x1="26.67" y1="38.2524" x2="26.6" y2="38.3" width="0.1524" layer="1"/>
+<contactref element="PAD2" pad="1"/>
+<wire x1="19.05" y1="22.86" x2="19.05" y2="25.6032" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="U3" pad="A7"/>
